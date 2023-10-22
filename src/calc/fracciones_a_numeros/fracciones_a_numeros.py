@@ -1,4 +1,4 @@
-def convertir_fraccion_a_num(num) -> float:
+def conv_fracc_num(num) -> float:
     if isinstance(num, (int, float)):
         return num
 
@@ -15,4 +15,3 @@ def convertir_fraccion_a_num(num) -> float:
             frac = float(num) / float(denom)
             return whole - frac if whole < 0 else whole + frac
     return float(num)
-
