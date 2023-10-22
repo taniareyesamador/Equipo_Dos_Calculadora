@@ -1,3 +1,4 @@
+"""Module providing a function printing python version."""
 from src.calc.suma.suma import suma
 from src.calc.resta.resta import resta
 from src.calc.division.division import division
@@ -5,7 +6,8 @@ from src.calc.multiplicacion.multiplicacion import multiplicacion
 
 
 def main():
-    resp_division = division(10, "2")
+    """ Prueba """
+    resp_division = division(10, 5)
     print(f"Resultado Division: {resp_division}")
 
     resp_multiplicacion = multiplicacion(10, 2)
