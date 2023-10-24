@@ -50,3 +50,13 @@ def obtener_datos_test_multiplicacion():
 @pytest.mark.parametrize("num1, num2, esperado", obtener_datos_test_multiplicacion())
 def test_am_parametrize(num1, num2, esperado):
     assert multiplicacion(num1, num2) == esperado
+
+
+# Pruebas para la conversión de fracción a número
+def obtener_datos_test_fraccion_a_num():
+    return [(1/2, 0.5), ("1/4", 0.25), (4/4, 1)]
+
+
+@pytest.mark.parametrize("num1, esperado", obtener_datos_test_fraccion_a_num())
+def test_am_parametrize(num1, esperado):
+    assert conv_fracc_num(num1) == esperado
