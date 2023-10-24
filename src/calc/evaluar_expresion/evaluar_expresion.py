@@ -42,15 +42,13 @@ def evaluar_expresion(expresion: str) -> float:
                 operand2 = operandos.pop()
                 operand1 = operandos.pop()
                 if operador == '+':
-                    result = operand1 + operand2
+                    result = suma(operand1, operand2)
                 elif operador == '-':
-                    result = operand1 - operand2
+                    result = resta(operand1, operand2)
                 elif operador == '*':
-                    result = operand1 * operand2
+                    result = multiplicacion(operand1, operand2)
                 elif operador == '/':
-                    if operand2 == 0:
-                        raise ValueError("División por cero")
-                    result = operand1 / operand2
+                    result = division(operand1, operand2)
                 operandos.append(result)
             operadores.append(expresion[i])
             i += 1
