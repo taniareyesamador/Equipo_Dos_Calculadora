@@ -45,7 +45,6 @@ Para el programa fue creado un entorno virtual llamado "Equipo_Dos_Calculadora":
 ### Estructura del proyecto
 
 ![estructura_proyecto_1](imagenes/estructura_proyecto_1.png)
-
 ![estructura_proyecto_2](imagenes/estructura_proyecto_2.png)
 
 ### Linters y Code Formatters
