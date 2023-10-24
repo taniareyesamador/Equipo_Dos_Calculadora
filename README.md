@@ -40,4 +40,4 @@ Con los siguientes números:
 
 Para el programa fue creado un entorno virtual llamado "Equipo_Dos_Calculadora":
 
- ![screen](C:\Users\Tania\Documents\Diplomado MML en AP\Módulo 2\Equipo_Dos_Calculadora\imagenes\entorno_virtual.png)
+ ![screen]("C:\Users\Tania\Documents\Diplomado MML en AP\Módulo 2\Equipo_Dos_Calculadora\imagenes\entorno_virtual.png")
