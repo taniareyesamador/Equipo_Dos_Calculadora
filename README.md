@@ -42,6 +42,8 @@ Para el programa fue creado un entorno virtual llamado "Equipo_Dos_Calculadora":
 
  ![entorno_virtual](imagenes/entorno_virtual.png)
 
+### Estructura del proyecto
+
 ### Linters y Code Formatters
 
 1. **pycodestyle**
@@ -71,3 +73,8 @@ Para el programa fue creado un entorno virtual llamado "Equipo_Dos_Calculadora":
     * Archivo: evaluar_expresion.py
     * Archivo: fraacciones_a_numeros.py
 
+### Pruebas
+
+#### Pruebas unitarias
+
+#### Pruebas de integración
