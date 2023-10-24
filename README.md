@@ -31,6 +31,13 @@ Pruebas de integración:
 * Realizar la prueba para la siguiente operación matemática: (num1 + num2) * (num3 - num4) 
 
 Con los siguientes números:
-(5+5)*(1.25-0.75) = (10)*(0.5) = 5
-(8+7/5)*(15-3/8) = (9.4)*(14.625) = 137.475
+(5+5) * (1.25-0.75) = (10) * (0.5) = 5
+(8+7/5) * (15-3/8) = (9.4) * (14.625) = 137.475
 
+## Creación del programa
+
+### Entorno virtual
+
+Para el programa fue creado un entorno virtual llamado "Equipo_Dos_Calculadora":
+
+ ![screen](C:\Users\Tania\Documents\Diplomado MML en AP\Módulo 2\Equipo_Dos_Calculadora\imagenes\entorno_virtual.png)
