@@ -40,31 +40,36 @@ Con los siguientes números:
 
 Para el programa fue creado un entorno virtual llamado "Equipo_Dos_Calculadora":
 
- ![entorno_virtual](imagenes/entorno_virtual.png)
+![entorno_virtual](imagenes/entorno_virtual.png)
 
 ### Estructura del proyecto
 
 ### Linters y Code Formatters
 
-1. **pycodestyle**
+1. **pylint**
     * Archivo: __main__.py
-    * Archivo: suma.py
-    * Archivo: resta.py
-    * Archivo: division.py
-    * Archivo: multiplicacion.py
-    * Archivo: evaluar_expresion.py
-    * Archivo: fraacciones_a_numeros.py
+    ![pylint_main](imagenes/pylint_main.png)
 
-2. **pylint**
-    * Archivo: __main__.py
     * Archivo: suma.py
-    * Archivo: resta.py
-    * Archivo: division.py
-    * Archivo: multiplicacion.py
-    * Archivo: evaluar_expresion.py
-    * Archivo: fraacciones_a_numeros.py
+    ![pylint_suma](imagenes/pylint_suma.png)
 
-3. **black**
+    * Archivo: resta.py
+    ![pylint_resta](imagenes/pylint_resta.png)
+
+    * Archivo: division.py
+    ![pylint_division](imagenes/pylint_division.png)
+
+    * Archivo: multiplicacion.py
+    ![pylint_multiplicacion](imagenes/pylint_multiplicacion.png)
+
+    * Archivo: evaluar_expresion.py
+    ![pylint_evaluar_expresion](imagenes/pylint_evaluar_expresion.png)
+
+    * Archivo: fracciones_a_numeros.py
+    ![pylint_fracciones_a_numeros](imagenes/pylint_fracciones_a_numeros.png)
+
+
+2. **black**
     * Archivo: __main__.py
     * Archivo: suma.py
     * Archivo: resta.py

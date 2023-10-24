@@ -1,4 +1,13 @@
+"""Module providing a function printing python version."""
 def conv_fracc_num(num) -> float:
+    """
+
+    Args:
+      num: 
+
+    Returns:
+
+    """
     if isinstance(num, (int, float)):
         return num
 
