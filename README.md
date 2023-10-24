@@ -40,4 +40,34 @@ Con los siguientes números:
 
 Para el programa fue creado un entorno virtual llamado "Equipo_Dos_Calculadora":
 
- ![screen](imagenes/entorno_virtual.png)
+ ![entorno_virtual](imagenes/entorno_virtual.png)
+
+### Linters y Code Formatters
+
+1. **pycodestyle**
+    * Archivo: __main__.py
+    * Archivo: suma.py
+    * Archivo: resta.py
+    * Archivo: division.py
+    * Archivo: multiplicacion.py
+    * Archivo: evaluar_expresion.py
+    * Archivo: fraacciones_a_numeros.py
+
+2. **pylint**
+    * Archivo: __main__.py
+    * Archivo: suma.py
+    * Archivo: resta.py
+    * Archivo: division.py
+    * Archivo: multiplicacion.py
+    * Archivo: evaluar_expresion.py
+    * Archivo: fraacciones_a_numeros.py
+
+3. **black**
+    * Archivo: __main__.py
+    * Archivo: suma.py
+    * Archivo: resta.py
+    * Archivo: division.py
+    * Archivo: multiplicacion.py
+    * Archivo: evaluar_expresion.py
+    * Archivo: fraacciones_a_numeros.py
+
