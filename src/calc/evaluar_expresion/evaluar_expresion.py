@@ -1,11 +1,19 @@
+"""Module providing a function printing python version."""
 from src.calc.suma.suma import suma
 from src.calc.resta.resta import resta
 from src.calc.division.division import division
 from src.calc.multiplicacion.multiplicacion import multiplicacion
-from src.calc.fracciones_a_numeros.fracciones_a_numeros import conv_fracc_num
 
 
-def evaluar_expresion(expresion):
+def evaluar_expresion(expresion: str) -> float:
+    """
+
+    Args:
+      expresion: str: 
+
+    Returns:
+
+    """
     # Función para evaluar una expresión matemática con múltiples paréntesis
 
     # Eliminar espacios en blanco de la expresión
@@ -47,11 +55,13 @@ def evaluar_expresion(expresion):
             operadores.append(expresion[i])
             i += 1
         elif expresion[i] == '(':
-            # Si el carácter actual es un paréntesis de apertura, simplemente agréguelo a la pila de operadores.
+            # Si el carácter actual es un paréntesis de apertura,
+            # simplemente agréguelo a la pila de operadores.
             operadores.append(expresion[i])
             i += 1
         elif expresion[i] == ')':
-            # Si el carácter actual es un paréntesis de cierre, realizar cálculos hasta encontrar el paréntesis de apertura correspondiente.
+            # Si el carácter actual es un paréntesis de cierre,
+            # realizar cálculos hasta encontrar el paréntesis de apertura correspondiente.
             while operadores and operadores[-1] != '(':
                 operador = operadores.pop()
                 operand2 = operandos.pop()
@@ -91,10 +101,4 @@ def evaluar_expresion(expresion):
     # El resultado final debe estar en la cima de la pila de operandos
     if len(operandos) == 1:
         return operandos[0]
-    else:
-        raise ValueError("Expresión inválida")
-
-# Ejemplo de uso
-expresion = "(5+5)*(1.25-0.75)"
-resultado = evaluar_expresion(expresion)
-print(f"El resultado de la expresión '{expresion}' es: {resultado}")
+    raise ValueError("Expresión inválida")
