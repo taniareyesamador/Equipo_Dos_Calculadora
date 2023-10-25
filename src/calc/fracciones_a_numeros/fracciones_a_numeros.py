@@ -1,13 +1,11 @@
-"""Module providing a function printing python version."""
-
-
-def conv_fracc_num(num) -> float:
+def conv_fracc_num(num: str) -> float:
     """
+    Esta función permite realiza la conversión de uns fracción a un número real
 
     Args:
-      num:
+      num: str:
 
-    Returns:
+    Returns: Un número real
 
     """
     if isinstance(num, (int, float)):
