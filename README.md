@@ -75,12 +75,25 @@ Para el programa fue creado un entorno virtual llamado "Equipo_Dos_Calculadora":
 
 2. **black**
     * Archivo: __main__.py
+    ![black_main](imagenes/black_main.png)
+
     * Archivo: suma.py
+    ![black_suma](imagenes/black_suma.png)
+
     * Archivo: resta.py
+    ![black_resta](imagenes/black_resta.png)
+
     * Archivo: division.py
+    ![black_division](imagenes/black_division.png)
+
     * Archivo: multiplicacion.py
+    ![black_multiplicacion](imagenes/black_multiplicacion.png)
+
     * Archivo: evaluar_expresion.py
-    * Archivo: fraacciones_a_numeros.py
+    ![black_evaluar_expresion](imagenes/black_evaluar_expresion.png)
+
+    * Archivo: fracciones_a_numeros.py
+    ![black_fracciones_a_numeros](imagenes/black_fracciones_a_numeros.png)
 
 ### Pruebas
 

@@ -9,7 +9,7 @@ def evaluar_expresion(expresion: str) -> float:
     """
 
     Args:
-      expresion: str: 
+      expresion: str:
 
     Returns:
 
@@ -25,55 +25,66 @@ def evaluar_expresion(expresion: str) -> float:
 
     i = 0
     while i < len(expresion):
-        if expresion[i].isdigit() or (i < len(expresion) - 1 and expresion[i] == '-' and (i == 0 or expresion[i - 1] in "+-*/(")):
+        if expresion[i].isdigit() or (
+            i < len(expresion) - 1
+            and expresion[i] == "-"
+            and (i == 0 or expresion[i - 1] in "+-*/(")
+        ):
             # Si el carácter actual es un dígito o un signo negativo y es un número negativo,
             # extraer el número completo y agregarlo a la pila de operandos.
             j = i
-            while j < len(expresion) and (expresion[j].isdigit() or expresion[j] == '.'):
+            while j < len(expresion) and (
+                expresion[j].isdigit() or expresion[j] == "."
+            ):
                 j += 1
             operandos.append(float(expresion[i:j]))
             i = j
         elif expresion[i] in "+-*/":
             # Si el carácter actual es un operador, verificar si se deben realizar cálculos previos.
-            while (operadores and operadores[-1] in "+-*/" and
-                   ((expresion[i] in "+-" and expresion[i] in "+-") or
-                    (expresion[i] in "*/" and operadores[-1] in "*/"))):
+            while (
+                operadores
+                and operadores[-1] in "+-*/"
+                and (
+                    (expresion[i] in "+-" and expresion[i] in "+-")
+                    or (expresion[i] in "*/" and operadores[-1] in "*/")
+                )
+            ):
                 operador = operadores.pop()
                 operand2 = operandos.pop()
                 operand1 = operandos.pop()
-                if operador == '+':
+                if operador == "+":
                     result = suma(operand1, operand2)
-                elif operador == '-':
+                elif operador == "-":
                     result = resta(operand1, operand2)
-                elif operador == '*':
+                elif operador == "*":
                     result = multiplicacion(operand1, operand2)
-                elif operador == '/':
+                elif operador == "/":
                     result = division(operand1, operand2)
                 operandos.append(result)
             operadores.append(expresion[i])
             i += 1
-        elif expresion[i] == '(':
+        elif expresion[i] == "(":
             # Si el carácter actual es un paréntesis de apertura,
             # simplemente agréguelo a la pila de operadores.
             operadores.append(expresion[i])
             i += 1
-        elif expresion[i] == ')':
+        elif expresion[i] == ")":
             # Si el carácter actual es un paréntesis de cierre,
             # realizar cálculos hasta encontrar el paréntesis de apertura correspondiente.
-            while operadores and operadores[-1] != '(':
+            while operadores and operadores[-1] != "(":
                 operador = operadores.pop()
                 operand2 = operandos.pop()
                 operand1 = operandos.pop()
-                if operador == '+':
+                if operador == "+":
                     result = suma(operand1, operand2)
-                elif operador == '-':
+                elif operador == "-":
                     result = resta(operand1, operand2)
-                elif operador == '*':
+                elif operador == "*":
                     result = multiplicacion(operand1, operand2)
-                elif operador == '/':
+                elif operador == "/":
                     result = division(operand1, operand2)
                 operandos.append(result)
-            if operadores and operadores[-1] == '(':
+            if operadores and operadores[-1] == "(":
                 operadores.pop()
             else:
                 raise ValueError("Paréntesis desbalanceados")
@@ -86,13 +97,13 @@ def evaluar_expresion(expresion: str) -> float:
         operador = operadores.pop()
         operand2 = operandos.pop()
         operand1 = operandos.pop()
-        if operador == '+':
+        if operador == "+":
             result = suma(operand1, operand2)
-        elif operador == '-':
+        elif operador == "-":
             result = resta(operand1, operand2)
-        elif operador == '*':
+        elif operador == "*":
             result = multiplicacion(operand1, operand2)
-        elif operador == '/':
+        elif operador == "/":
             result = division(operand1, operand2)
         operandos.append(result)
 

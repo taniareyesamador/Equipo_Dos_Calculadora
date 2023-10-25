@@ -6,8 +6,8 @@ def resta(num1: float, num2: float) -> float:
     """
 
     Args:
-      num1: float: 
-      num2: float: 
+      num1: float:
+      num2: float:
 
     Returns:
 
