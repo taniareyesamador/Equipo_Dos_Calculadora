@@ -99,4 +99,8 @@ Para el programa fue creado un entorno virtual llamado "Equipo_Dos_Calculadora":
 
 #### Pruebas unitarias
 
+![pruebas_unitarias](imagenes/pruebas_unitarias.png)
+
 #### Pruebas de integración
+
+![pruebas_de_integracion](imagenes/pruebas_de_integracion.png)

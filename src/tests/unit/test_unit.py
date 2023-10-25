@@ -28,7 +28,7 @@ def obtener_datos_test_resta():
 
 
 @pytest.mark.parametrize("num1, num2, esperado", obtener_datos_test_resta())
-def test_ap_parametrize(num1, num2, esperado):
+def test_resta_parametrize(num1, num2, esperado):
     assert resta(num1, num2) == esperado
 
 
@@ -38,7 +38,7 @@ def obtener_datos_test_division():
 
 
 @pytest.mark.parametrize("num1, num2, esperado", obtener_datos_test_division())
-def test_am_parametrize(num1, num2, esperado):
+def test_division_parametrize(num1, num2, esperado):
     assert division(num1, num2) == esperado
 
 
@@ -48,7 +48,7 @@ def obtener_datos_test_multiplicacion():
 
 
 @pytest.mark.parametrize("num1, num2, esperado", obtener_datos_test_multiplicacion())
-def test_am_parametrize(num1, num2, esperado):
+def test_multiplicacion_parametrize(num1, num2, esperado):
     assert multiplicacion(num1, num2) == esperado
 
 
@@ -58,5 +58,5 @@ def obtener_datos_test_fraccion_a_num():
 
 
 @pytest.mark.parametrize("num1, esperado", obtener_datos_test_fraccion_a_num())
-def test_am_parametrize(num1, esperado):
+def test_fraccion_a_num_parametrize(num1, esperado):
     assert conv_fracc_num(num1) == esperado
